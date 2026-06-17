@@ -1,4 +1,5 @@
-#In data analysis, we the programmers often calculate the same iteration for a hundred of times.   Instead of re-writing the code, we will be using the Function. 
+#In data analysis, we the programmers often calculate the same iteration for a hundred of times. 
+#Instead of re-writing the code, we will be using the Function. 
 
 # Defining the function
 def calculate_profit(revenue, expenses):
