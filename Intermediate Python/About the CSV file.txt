@@ -1,30 +1,20 @@
 An Introduction to CSV Files in Data Programming
-
 Welcome to the world of data programming. If you are going to work with data, you will inevitably encounter the CSV file. It is the undisputed "lingua franca" of data exchange—a format so simple, yet so powerful, that nearly every database, programming language, and data analysis tool supports it.
 
 What is a CSV File?
-
 CSV stands for Comma-Separated Values.
 At its core, a CSV is a plain text file designed to store tabular data (data organized into rows and columns, like you would see in a spreadsheet). Because it is plain text, it doesn't contain any hidden formatting, colors, formulas, or multiple sheets. It is purely raw data, making it extremely lightweight and universally readable.
 
 How Does it Work?
-
 The structure of a CSV file relies on a few very simple rules to organize data:
-
 Rows are Records: Every new line in the text file represents a new row of data (a complete record).
-
 Commas are Columns: Within each row, the individual pieces of data (the fields) are separated by a specific character called a delimiter. As the name suggests, the standard delimiter is a comma (,).
-
 The Header (Optional but Standard): The very first line of a CSV file usually contains the names of the column.
 
 Why are CSVs Crucial for Data Programming?
-
 When you write scripts in languages like Python, R, or SQL, you need a way to get external data into your code. CSVs are often the first choice for several reasons:
-
 Universal Compatibility: You can export a database table to a CSV, email it to a colleague, and they can open it in Excel, load it into Python, or import it into a completely different database. It works everywhere.
-
 Human-Readable: If your code breaks or your data looks weird, you can open a CSV in any basic text editor to visually inspect the raw data and see exactly what is going wrong.
-
 Lightweight: Because it lacks formatting and metadata, CSV files have a very small file size compared to Excel files (.xlsx) or complex database dumps.
 
 
@@ -36,7 +26,6 @@ For example, in Python, the most popular library for data analysis is pandas. It
 Sample code:
 
 import pandas as pd
-
 # This single line reads the CSV file and organizes it into a table
 employee_data = pd.read_csv('employees.csv')
 
