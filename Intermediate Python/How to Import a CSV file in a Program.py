@@ -44,3 +44,5 @@ print("\n")
 average_grade = df['Grade'].mean()
 
 print(f"The class average is: {average_grade}")
+
+#prepared by: kai-cldece
