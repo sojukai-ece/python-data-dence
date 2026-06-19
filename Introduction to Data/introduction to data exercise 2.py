@@ -12,22 +12,17 @@ Write a for loop to iterate through raw_temps.
 """
 
 
-# 1. A list containing multiple dictionaries
-customers = [
-    {"name": "Alice", "tier": "VIP", "spent": 150.00},
-    {"name": "Bob", "tier": "Basic", "spent": 45.50},
-    {"name": "Charlie", "tier": "VIP", "spent": 200.00}
-]
+# 1. The list with errors
+raw_temps = [72, 74, -999, 75, 71, -999, 73]
 
-# 2. Starting our counter at zero
-vip_total = 0
+# 2. An empty list to hold the good data
+clean_temps = []
 
-# 3 & 4. Looping and checking conditions
-for person in customers:
-    # Remember to use == for checking equality!
-    if person["tier"] == "VIP": 
-        # Adding to the running total
-        vip_total = vip_total + person["spent"] 
+# 3 & 4. Filtering the data
+for temp in raw_temps:
+    if temp != -999: # The != symbol means "not equal to"
+        clean_temps.append(temp) # .append() adds an item to a list
 
-# 5. Output should be 350.0
-print(f"Total VIP Revenue: ${vip_total}") 
+# 5. Output should be [72, 74, 75, 71, 73]
+print(clean_temps)
+
